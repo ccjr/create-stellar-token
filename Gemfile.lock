@@ -1,0 +1,71 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activemodel (5.2.3)
+      activesupport (= 5.2.3)
+    activesupport (5.2.3)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+    base32 (0.3.2)
+    citrus (3.0.2)
+    concurrent-ruby (1.1.5)
+    contracts (0.16.0)
+    digest-crc (0.4.1)
+    excon (0.62.0)
+    faraday (0.15.4)
+      multipart-post (>= 1.2, < 3)
+    faraday-digestauth (0.3.0)
+      faraday (~> 0.7)
+      net-http-digest_auth (~> 1.4)
+    faraday_hal_middleware (0.1.0)
+      faraday_middleware (~> 0.9)
+    faraday_middleware (0.13.1)
+      faraday (>= 0.7.4, < 1.0)
+    ffi (1.10.0)
+    hyperclient (0.9.0)
+      faraday (>= 0.9.0)
+      faraday-digestauth
+      faraday_hal_middleware
+      faraday_middleware
+      net-http-digest_auth
+      uri_template
+    i18n (1.6.0)
+      concurrent-ruby (~> 1.0)
+    minitest (5.11.3)
+    multipart-post (2.0.0)
+    net-http-digest_auth (1.4.1)
+    rbnacl (6.0.1)
+      ffi
+    stellar-base (0.18.0)
+      activesupport (>= 5.2.0)
+      base32
+      digest-crc
+      rbnacl (>= 6.0)
+      xdr (~> 3.0.0)
+    stellar-sdk (0.6.0)
+      activesupport (>= 5.2.0)
+      contracts (~> 0.16)
+      excon (~> 0.44, >= 0.44.4)
+      hyperclient (~> 0.7)
+      stellar-base (>= 0.18.0)
+      toml-rb (~> 1.1, >= 1.1.1)
+    thread_safe (0.3.6)
+    toml-rb (1.1.2)
+      citrus (~> 3.0, > 3.0)
+    tzinfo (1.2.5)
+      thread_safe (~> 0.1)
+    uri_template (0.7.0)
+    xdr (3.0.0)
+      activemodel (>= 5.2.0)
+      activesupport (>= 5.2.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  stellar-sdk
+
+BUNDLED WITH
+   2.0.1
